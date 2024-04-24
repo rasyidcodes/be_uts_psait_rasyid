@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->string('nim', 10)->unique()->primary();
             $table->string('nama', 20);
-            $table->string('alamat', 40)->unique();
+            $table->string('alamat', 40);
             $table->date('tanggal_lahir');
         });
     }
